@@ -32,7 +32,7 @@ function App() {
       <Tracks />
       <Sponsors />
       <PastSponsors />
-      <Cp />
+      {/* <Cp /> */}
       <Faq />
       <Discord />
       <Footer />
