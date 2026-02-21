@@ -10,6 +10,7 @@ import About from './components/AboutUs/About'
 import Wihts from './components/Wihts/Wihts'
 import Faq from './components/Faq/Faq'
 import Cp from './components/Cp/Cp'
+import Venue from './components/Venue/Venue'
 // import CursorFollower from './components/CursorFollower';
 
 import LandingPage from './pages/LandingPage'
@@ -25,6 +26,7 @@ function App() {
       <About/>
       <Wihts/>
       <Hackatron2 />
+      <Venue/>
       <Prizes />
       <Tracks />
       <Sponsors />
