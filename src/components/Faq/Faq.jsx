@@ -223,7 +223,7 @@
 // }
 
  import React, { useState, useEffect } from "react";
-import { Hammer } from "lucide-react";
+import { Play } from "lucide-react";
 
 const FaqItem = ({ question, answer, isOpen, onClick, className = "" }) => {
   const [bgPosition, setBgPosition] = useState({ x: 0, y: 0 });
@@ -245,7 +245,7 @@ const FaqItem = ({ question, answer, isOpen, onClick, className = "" }) => {
       onClick={onClick}
       className={`w-full
         border-2 border-dashed border-[#16a34a]
-        p-6
+        p-4
         cursor-pointer
         transition-all duration-300
         //backdrop-blur-md
@@ -258,30 +258,21 @@ const FaqItem = ({ question, answer, isOpen, onClick, className = "" }) => {
       `}
     >
       <div className="flex justify-between items-center gap-4">
-        <h3 className="text-2xl text-white leading-tight break-words">
+        <h3 className="sm:text-1xl md:text-2xl text-white leading-tight break-words">
           {question}
         </h3>
 
-        {/* <Play
+        {<Play
           strokeWidth={3.5}
           className={`transition-transform duration-300 shrink-0 ${
             isOpen ? "rotate-90 text-[#00FF00]" : "text-[#00FF00]"
           }`}
-        /> */}
-        <Hammer
-          size={32}
-          strokeWidth={3}
-          className={`
-           shrink-0
-           transition-all duration-200
-          ${isOpen ? "rotate-45 scale-110" : ""}
-           text-[#4CAF50]
-   `}
-/>
+        /> }
+        
       </div>
 
       {isOpen && (
-        <div className="mt-4 text-2xl text-gray-300 leading-relaxed break-words">
+        <div className="mt-4 sm:text-1xl text-gray-300 md:text-2xl leading-relaxed break-words">
           {answer}
         </div>
       )}
@@ -301,7 +292,8 @@ export default function Faq() {
       id="faq"
       className="relative z-[1] py-16 px-6 text-white scroll-mt-[120px]"
     >
-      <h2 className=" text-center md:text-left text-[#FAF9F6] mb-12 text-4xl md:text-6xl md:pl-24">
+       <div className="max-w-7xl mx-auto px-6 md:px-10">
+      <h2 className=" text-left  text-white mb-12 text-3xl md:text-left md:text-5xl sm:text-3xl ">
         FREQUENTLY ASKED QUESTIONS
       </h2>
 
@@ -309,21 +301,7 @@ export default function Faq() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
 
         {/* LEFT COLUMN */}
-        <div className="flex flex-col gap-6 w-full md:flex-1">
-          <FaqItem
-            question="How many team members do I need?"
-            answer="You can participate individually or in teams of 3 to 5 members."
-            isOpen={openIndex === 0}
-            onClick={() => toggle(0)}
-          />
-
-          <FaqItem
-            question="How much are the participation fees?"
-            answer="Participation is absolutely free."
-            isOpen={openIndex === 1}
-            onClick={() => toggle(1)}
-          />
-
+        <div className="flex flex-col gap-6 w-full md:flex-1 ">
           <FaqItem
             question="How do I register?"
             answer={
@@ -339,49 +317,91 @@ export default function Faq() {
                 </a>
               </span>
             }
+            isOpen={openIndex === 0}
+            onClick={() => toggle(0)}
+            className="pb-1.5 pt-1.5 md:pb-3 md:pt-3"
+          />
+          
+
+          <FaqItem
+            question="How much are the participation fees?"
+            answer="Participation is absolutely free."
+            isOpen={openIndex === 1}
+            onClick={() => toggle(1)}
+            className="pb-1.5 pt-1.5 md:pb-3 md:pt-3"
+          />
+          
+          <FaqItem
+            question="Can I participate alone or in need a team?"
+            answer="No, You cannot participate alone. Your team must comprise of 4 to 5 members including at least one female member."
             isOpen={openIndex === 2}
             onClick={() => toggle(2)}
+            className="pb-1.5 pt-1.5 md:pb-3 md:pt-3"
+          />
+          
+
+          <FaqItem
+            question="What is the duration of Hackathon?"
+            answer="The Hackathon will last for 36 hours."
+            isOpen={openIndex === 3}
+            onClick={() => toggle(3)}
+            className="pb-1.5 pt-1.5 md:pb-3 md:pt-3"
           />
 
           <FaqItem
             question="Is food and accommodation free?"
-            answer="Food and basic accommodation will be provided. Extra snacks are separate."
-            isOpen={openIndex === 3}
-            onClick={() => toggle(3)}
+            answer="Yes, food and accommodation is completely free."
+            isOpen={openIndex === 4}
+            onClick={() => toggle(4)}
+            className="pb-1.5 pt-1.5 md:pb-4 md:pt-4"
           />
         </div>
 
         {/* RIGHT COLUMN */}
-        <div className="flex flex-col gap-6 w-full md:flex-1">
+        <div className="flex flex-col gap-6 w-full md:flex-1 ">
           <FaqItem
             question="Will the hackathon be online or offline?"
             answer="It will be completely offline."
-            isOpen={openIndex === 4}
-            onClick={() => toggle(4)}
-            className=""
+            isOpen={openIndex === 5}
+            onClick={() => toggle(5)}
+            className="pb-1.5 pt-1.5 md:pb-3 md:pt-3"
+            
           />
 
           <FaqItem
-            question="What are the prerequisites?"
-            answer="No prerequisites are required. Open for all skill levels."
-            isOpen={openIndex === 5}
-            onClick={() => toggle(5)}
+            question="Who can participate in HACKATRON?"
+            answer="Any engineering student from any college can participate."
+            isOpen={openIndex === 6}
+            onClick={() => toggle(6)}
+            className="pb-1.5 pt-1.5 md:pb-3 md:pt-3"
+            
           />
 
           <FaqItem
             question="What is the venue?"
             answer="BIT Sindri, Dhanbad."
-            isOpen={openIndex === 6}
-            onClick={() => toggle(6)}
+            isOpen={openIndex === 7}
+            onClick={() => toggle(7)}
+            className="pb-1.5 pt-1.5 md:pb-3 md:pt-3"
           />
 
           <FaqItem
             question="Can my friend join after submission?"
             answer="Yes, your friend can submit an individual application and join once both are approved."
-            isOpen={openIndex === 7}
-            onClick={() => toggle(7)}
+            isOpen={openIndex === 8}
+            onClick={() => toggle(8)}
+            className="pb-1.5 pt-1.5 md:pb-3 md:pt-3"
+          />
+
+          <FaqItem
+            question="What are the benefits that participants will get by attending Hackathon?"
+            answer="Participants will get swags, certificates, and exciting prizes."
+            isOpen={openIndex === 9}
+            onClick={() => toggle(9)}
+            className="pb-1.5 pt-1.5 md:pb-0 md:pt-0"
           />
         </div>
+      </div>
       </div>
     </section>
   );
