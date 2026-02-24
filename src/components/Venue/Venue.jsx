@@ -30,7 +30,7 @@ const Venue = () => {
 
       
         <h1 className="py-6 text-2xl md:text-4xl xl:text-5xl 3xl:text-7xl text-[#9E9E9E]">
-          $ cd <span className="text-white">DESTINATION</span>
+          $ find <span className="text-white">DESTINATION</span>.txt
         </h1>
 
         <div className="grid xl:grid-cols-2 gap-12 px-4 sm:p-10">
