@@ -1,0 +1,59 @@
+.wihts-pixel {
+  position: absolute;
+  top: -40px;
+  left: -70px;
+  width: clamp(140px, 12vw, 210px);
+  pointer-events: none;
+  z-index: 10;
+
+  animation: wihtsFloat 4s ease-in-out infinite;
+}
+
+@keyframes wihtsFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 640px) {
+  .wihts-pixel {
+    top: -25px;
+    left:-40px;
+    
+    width: 90px;
+  }
+}
+
+.wihts-arcade {
+  position: absolute;
+  bottom: -70px;
+  right: -100px;
+  width: clamp(270px, 10vw, 300px);
+  pointer-events: none;
+  z-index: 9;
+
+  animation: wihtsArcadeFloat 3.2s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(127, 124, 255, 0.4));
+}
+
+@keyframes wihtsArcadeFloat {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(8px); }
+  100% { transform: translateY(0); }
+}
+
+
+@media (max-width: 640px) {
+  .wihts-arcade {
+  bottom: -70px;
+  width: 210px;
+ 
+  }
+}

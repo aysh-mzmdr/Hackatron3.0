@@ -1,0 +1,60 @@
+.about-pixel {
+  position: absolute;
+  width: clamp(60px, 10vw, 120px);
+  pointer-events: none;
+  animation: floatY 3.5s ease-in-out infinite;
+  z-index: 10;
+}
+
+
+.about-pixel--top-left {
+  top: -80px;
+  left: -40px;
+  width:120px;
+  height:auto;
+}
+
+/* .about-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.about-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+
+.about-pixel--bottom-right {
+  bottom: -75px;
+  right: -70px;
+  animation-delay: 1.5s;
+  width: clamp(150px, 14vw, 240px);
+}
+
+@keyframes floatY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 640px) {
+  .about-pixel--top-left {
+    top: -45px;
+    left: -25px;
+    width:90px;
+  }
+
+  .about-pixel--bottom-right {
+    bottom: -60px;
+    right: -45px;
+  }
+}
