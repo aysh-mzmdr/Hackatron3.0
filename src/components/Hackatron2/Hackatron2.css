@@ -9,18 +9,19 @@ hackatron2-container {
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 #Glimpse {
-  width: 80%;
+  width: 90%;
   margin: auto;
   max-width: 1200px;
 }
 .section-title {
-  font-size: 60px;
+  font-size: 50px;
   font-family: 'VT323', monospace;
   font-weight: 550;
   color: white;
   position: relative;
   z-index: 2;
 }
+
 
 .glimpse-container {
   border-right: none;
@@ -62,6 +63,7 @@ hackatron2-container {
   filter: saturate(1.5) brightness(1.1) contrast(1.1) hue-rotate(10deg);
   border: 4px dashed #00FF00;
 }
+
 
 .content {
   display: flex;
@@ -139,6 +141,10 @@ hackatron2-container {
 }
 
 @media screen and (max-width: 1500px) {
+  .section-title {
+  font-size: 20px;
+}
+
   .content h2 {
     font-size: 4.5rem;
   }
@@ -205,17 +211,17 @@ hackatron2-container {
 
   .image-container > img {
     height: 167px;
-    border-radius: 10px;
+    border-radius: 0px;
   }
 
   .right-container > img {
     height: 350px;
-    border-radius: 10px;
+    border-radius: 0px;
   }
 
   .bottom-container > img {
     height: 150px;
-    border-radius: 10px;
+    border-radius: 0px;
   }
 }
 
@@ -305,20 +311,39 @@ hackatron2-container {
   .content p {
     font-size: 0.8rem;
   }
+  #Glimpse {
+  margin-bottom: -20px;
+}
+  
+.glimpse-container {
+  margin: 20px 0 0 0;  /* bottom margin remove */
+}
+.image-card {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 1.5rem;
+}
 
   .image-container > img {
-    height: 86px;
-    border-radius: 8px;
+    height: 100px;
+    border-radius: 0px;
+    border: 2px dashed #00FF00;
+    gap: 1.5rem;
   }
 
   .right-container > img {
     height: 180px;
-    border-radius: 8px;
+    border-radius: 0px;
+    border: 2px dashed #00FF00;  
+    gap: 1.5rem;
   }
 
   .bottom-container > img {
     height: 70px;
-    border-radius: 8px;
+    border-radius: 0px;
+    border: 2px dashed #00FF00;
+    gap: 1.5rem;
   }
 }
 

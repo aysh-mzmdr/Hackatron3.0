@@ -17,7 +17,7 @@ const ImageCard = ({ src1, src2, src3, className, content, content2 }) => {
         style={{ flexFlow: className ? "column-reverse" : "" }}
       >
         <div className="image-container">
-          <img src={src1} height="270" width="570" alt="event" />
+          <img src={src1} height="2700" width="570" alt="event" />
           <div className="content">
             <h2>{numbers[0]}+</h2>
             <p>{text}</p>
@@ -29,7 +29,7 @@ const ImageCard = ({ src1, src2, src3, className, content, content2 }) => {
             <h2>{numbers2[0]}+</h2>
             <p>{text2}</p>
           </div>
-          <img src={src3} height="270" width="570" alt="event" />
+          <img src={src3} height="370" width="570" alt="event" />
         </div>
       </div>
 
@@ -58,8 +58,8 @@ const Glimpse = () => {
 
         <div className="bottom-container">
           <img
-            src="./public/images/glimpse/pic7.jpeg"
-            width="550"
+            src="/images/glimpse/pic7.jpeg"
+            width="500"
             height="150"
             alt="event"
           />
@@ -70,7 +70,7 @@ const Glimpse = () => {
           </div>
 
           <img
-            src="./public/images/glimpse/pic8.png"
+            src="/images/glimpse/pic8.png"
             width="450"
             height="300"
             alt="event"
