@@ -45,7 +45,7 @@ const Glimpse = () => {
     <SectionLayout
       Title={
         <span className="text-[#9E9E9E]">
-          $ man <span className="text-white">Hackatron</span> <span className="text-[#ff0000]">2.0</span>
+          $ man <span className="text-white">Previous</span> <span className="text-[#ff0000]">Events</span>
         </span>
       }
       id="Glimpse"
