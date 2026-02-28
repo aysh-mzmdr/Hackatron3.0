@@ -65,7 +65,7 @@ const Glimpse = () => {
 
         <div className="bottom-container">
           <img
-            src="/images/glimpse/pic7.jpeg"
+            src="/images/glimpse/pic7.webp"
             width="500"
             height="150"
             alt="event"
@@ -79,7 +79,7 @@ const Glimpse = () => {
           </div>
 
           <img
-            src="/images/glimpse/pic8.png"
+            src="/images/glimpse/pic12.webp"
             width="450"
             height="300"
             alt="event"
