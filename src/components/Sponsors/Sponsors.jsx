@@ -144,6 +144,24 @@ const Sponsors = () => {
                     </div>
                 </div>
 
+                {/* PLATINUM */}
+                <div className='pt-3 3xl:pt-10 pb-12 border-dashed border-[#87CEEB] border-b-[0.1rem] sm:border-b-[0.5rem] md:pt-4 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto flex flex-col items-center justify-center gap-5 lg:gap-8'>
+                    <h3 className='font-vt323 font-medium text-[#87CEEB] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>PLATINUM</h3>
+                    <div className='flex flex-wrap justify-center items-center gap-8 px-12 2xl:px-24'>
+                        <div className='relative group'>
+                            <Link to='https://share.google/fugDqRjYe4IeFxTJK' target="_blank" rel="noopener noreferrer" className="relative flex flex-col items-center justify-center w-[60vw] h-[100px] sm:w-[15vw] sm:h-[120px] 3xl:w-[15rem] transition-all duration-300 hover:scale-105">
+                                <div className="flex items-center justify-center w-full h-full p-4 bg-white rounded-2xl shadow-[0_0_25px_rgba(135,206,235,0.3)] hover:shadow-[0_0_25px_rgba(135,206,235,0.7)] transition-all duration-300 overflow-hidden">
+                                    <ProgressiveImage src={ktmplLogo2026} alt="MASTRA LOGO" width={1000} height={1000} className='max-w-full max-h-full w-auto h-auto object-contain'
+                                        placeholder={ktmplLogo2026Mini} />
+                                </div>
+                                <div className="absolute top-full left-0 right-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 pt-3 z-10">
+                                    <p className="font-vt323 text-[#ec53b0] text-lg md:text-xl tracking-widest text-center px-1 whitespace-nowrap bg-black/40 rounded">KTMPL</p>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+
                 {/* GOLD */}
                 <div className='pt-3 3xl:pt-10 pb-12 border-dashed border-[#e29b29] border-b-[0.1rem] sm:border-b-[0.5rem] md:pt-4 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto flex flex-col items-center justify-center gap-5 lg:gap-8'>
                     <h3 className='font-vt323 font-medium text-[#e29b29] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>GOLD</h3>
@@ -175,6 +193,7 @@ const Sponsors = () => {
                     </div>
                 </div>
 
+                {/* TRACK */}
                 <div className='pt-3 3xl:pt-10 pb-12 border-dashed border-[#10b981] border-b-[0.1rem] sm:border-b-[0.5rem] md:pt-4 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto flex flex-col items-center justify-center gap-5 lg:gap-8'>
                     <h3 className='font-vt323 font-medium text-[#10b981] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>TRACK SPONSOR</h3>
                     <div className='flex flex-wrap justify-center items-center gap-8 px-12'>
@@ -228,24 +247,6 @@ const Sponsors = () => {
                                 </div>
                                 <div className="absolute top-full left-0 right-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 pt-3 z-10">
                                     <p className="font-vt323 text-[#ec53b0] text-lg md:text-xl tracking-widest text-center px-1 whitespace-nowrap bg-black/40 rounded">MASTRA</p>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
-                {/* PLATINUM */}
-                <div className='pt-3 3xl:pt-10 pb-12 border-dashed border-[#87CEEB] border-b-[0.1rem] sm:border-b-[0.5rem] md:pt-4 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto flex flex-col items-center justify-center gap-5 lg:gap-8'>
-                    <h3 className='font-vt323 font-medium text-[#87CEEB] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>PLATINUM</h3>
-                    <div className='flex flex-wrap justify-center items-center gap-8 px-12 2xl:px-24'>
-                        <div className='relative group'>
-                            <Link to='https://share.google/fugDqRjYe4IeFxTJK' target="_blank" rel="noopener noreferrer" className="relative flex flex-col items-center justify-center w-[60vw] h-[100px] sm:w-[15vw] sm:h-[120px] 3xl:w-[15rem] transition-all duration-300 hover:scale-105">
-                                <div className="flex items-center justify-center w-full h-full p-4 bg-white rounded-2xl shadow-[0_0_25px_rgba(135,206,235,0.3)] hover:shadow-[0_0_25px_rgba(135,206,235,0.7)] transition-all duration-300 overflow-hidden">
-                                    <ProgressiveImage src={ktmplLogo2026} alt="MASTRA LOGO" width={1000} height={1000} className='max-w-full max-h-full w-auto h-auto object-contain'
-                                        placeholder={ktmplLogo2026Mini} />
-                                </div>
-                                <div className="absolute top-full left-0 right-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 pt-3 z-10">
-                                    <p className="font-vt323 text-[#ec53b0] text-lg md:text-xl tracking-widest text-center px-1 whitespace-nowrap bg-black/40 rounded">KTMPL</p>
                                 </div>
                             </Link>
                         </div>
