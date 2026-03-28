@@ -31,6 +31,9 @@ import credilaLogo2026 from '../../assets/images/Sponsors2026/Credila-Logo.png';
 import insightsLogo2026 from '../../assets/images/Sponsors2026/iNsights.png';
 import n8nLogo2026 from '../../assets/images/Sponsors2026/n8n_Logo.svg';
 import mastraLogo2026 from '../../assets/images/Sponsors2026/mastra_Logo.png';
+import algorandLogo2026 from '../../assets/images/Sponsors2026/algorand.png';
+import bcclLogo2026 from '../../assets/images/Sponsors2026/bccl.png';
+import ktmplLogo2026 from '../../assets/images/Sponsors2026/ktmpl.webp';
 
 
 import ProgressiveImage from "../ProgressiveImage";
@@ -41,6 +44,9 @@ import interviewCakeLogo2026Mini from '../../assets/images/Sponsors2026/Sponsors
 import credilaLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/credilaMini.webp';
 import insightsLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/iNsightsMini.png';
 import mastraLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/mastra_LogoMini.png';
+import algorandLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/algorandMini.png';
+import bcclLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/bcclMini.png';
+import ktmplLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/ktmplMini.webp';
 
 const Sponsors = () => {
     const [bgSize, setBgSize] = useState("110%");
@@ -120,6 +126,24 @@ const Sponsors = () => {
                 </div>
                 */}
 
+                {/* TITLE */}
+                <div className='pt-3 3xl:pt-10 pb-12 border-dashed border-[#FFD700] border-b-[0.1rem] sm:border-b-[0.5rem] md:pt-4 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto flex flex-col items-center justify-center gap-5 lg:gap-8'>
+                    <h3 className='font-vt323 font-medium text-[#FFD700] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>TITLE</h3>
+                    <div className='flex flex-wrap justify-center items-center gap-8 px-12 2xl:px-24'>
+                        <div className='relative group'>
+                            <Link to='https://bcclweb.in/' target="_blank" rel="noopener noreferrer" className="relative flex flex-col items-center justify-center w-[60vw] h-[100px] sm:w-[15vw] sm:h-[120px] 3xl:w-[15rem] transition-all duration-300 hover:scale-105">
+                                <div className="flex items-center justify-center w-full h-full p-4 bg-white rounded-2xl shadow-[0_0_25px_rgba(255,215,0,0.3)] hover:shadow-[0_0_25px_rgba(255,215,0,0.7)] transition-all duration-300 overflow-hidden">
+                                    <ProgressiveImage src={bcclLogo2026} alt="BCCL LOGO" width={1000} height={1000} className='max-w-full max-h-full w-auto h-auto object-contain'
+                                        placeholder={bcclLogo2026Mini} />
+                                </div>
+                                <div className="absolute top-full left-0 right-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 pt-3 z-10">
+                                    <p className="font-vt323 text-[#ec53b0] text-lg md:text-xl tracking-widest text-center px-1 whitespace-nowrap bg-black/40 rounded">BCCL</p>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+
                 {/* GOLD */}
                 <div className='pt-3 3xl:pt-10 pb-12 border-dashed border-[#e29b29] border-b-[0.1rem] sm:border-b-[0.5rem] md:pt-4 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto flex flex-col items-center justify-center gap-5 lg:gap-8'>
                     <h3 className='font-vt323 font-medium text-[#e29b29] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>GOLD</h3>
@@ -133,6 +157,18 @@ const Sponsors = () => {
                                 </div>
                                 <div className="absolute top-full left-0 right-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 pt-3 z-10">
                                     <p className="font-vt323 text-[#ec53b0] text-lg md:text-xl tracking-widest text-center px-1 whitespace-nowrap bg-black/40 rounded">DEVFOLIO</p>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className='relative group'>
+                            <Link to='https://algorand.co/' target="_blank" rel="noopener noreferrer" className="relative flex flex-col items-center justify-center w-[60vw] h-[100px] sm:w-[15vw] sm:h-[120px] 3xl:w-[15rem] transition-all duration-300 hover:scale-105">
+                                <div className="flex items-center justify-center w-full h-full p-4 bg-white rounded-2xl shadow-[0_0_25px_rgba(226,155,41,0.3)] hover:shadow-[0_0_25px_rgba(226,155,41,0.7)] transition-all duration-300 overflow-hidden">
+                                    <ProgressiveImage
+                                        src={algorandLogo2026} alt="ALGORAND LOGO" width={1000} height={1000} className='max-w-full max-h-full w-auto h-auto object-contain'
+                                        placeholder={algorandLogo2026Mini} />
+                                </div>
+                                <div className="absolute top-full left-0 right-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 pt-3 z-10">
+                                    <p className="font-vt323 text-[#ec53b0] text-lg md:text-xl tracking-widest text-center px-1 whitespace-nowrap bg-black/40 rounded">ALGORAND</p>
                                 </div>
                             </Link>
                         </div>
@@ -192,6 +228,24 @@ const Sponsors = () => {
                                 </div>
                                 <div className="absolute top-full left-0 right-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 pt-3 z-10">
                                     <p className="font-vt323 text-[#ec53b0] text-lg md:text-xl tracking-widest text-center px-1 whitespace-nowrap bg-black/40 rounded">MASTRA</p>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+
+                {/* PLATINUM */}
+                <div className='pt-3 3xl:pt-10 pb-12 border-dashed border-[#87CEEB] border-b-[0.1rem] sm:border-b-[0.5rem] md:pt-4 w-[80vw] xl:w-[65vw] 2xl:w-full mx-auto flex flex-col items-center justify-center gap-5 lg:gap-8'>
+                    <h3 className='font-vt323 font-medium text-[#87CEEB] text-[9vw] leading-[5vw] sm:leading-[3.5rem] sm:text-[7vw] lg:text-[6vw] lg:leading-[3rem] xl:text-[5vw] xl:leading-[5rem] 3xl:text-[4vw]'>PLATINUM</h3>
+                    <div className='flex flex-wrap justify-center items-center gap-8 px-12 2xl:px-24'>
+                        <div className='relative group'>
+                            <Link to='https://share.google/fugDqRjYe4IeFxTJK' target="_blank" rel="noopener noreferrer" className="relative flex flex-col items-center justify-center w-[60vw] h-[100px] sm:w-[15vw] sm:h-[120px] 3xl:w-[15rem] transition-all duration-300 hover:scale-105">
+                                <div className="flex items-center justify-center w-full h-full p-4 bg-white rounded-2xl shadow-[0_0_25px_rgba(135,206,235,0.3)] hover:shadow-[0_0_25px_rgba(135,206,235,0.7)] transition-all duration-300 overflow-hidden">
+                                    <ProgressiveImage src={ktmplLogo2026} alt="MASTRA LOGO" width={1000} height={1000} className='max-w-full max-h-full w-auto h-auto object-contain'
+                                        placeholder={ktmplLogo2026Mini} />
+                                </div>
+                                <div className="absolute top-full left-0 right-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 pt-3 z-10">
+                                    <p className="font-vt323 text-[#ec53b0] text-lg md:text-xl tracking-widest text-center px-1 whitespace-nowrap bg-black/40 rounded">KTMPL</p>
                                 </div>
                             </Link>
                         </div>
