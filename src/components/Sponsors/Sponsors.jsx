@@ -32,8 +32,8 @@ import insightsLogo2026 from '../../assets/images/Sponsors2026/iNsights.png';
 import n8nLogo2026 from '../../assets/images/Sponsors2026/n8n_Logo.svg';
 import mastraLogo2026 from '../../assets/images/Sponsors2026/mastra_Logo.png';
 import algorandLogo2026 from '../../assets/images/Sponsors2026/algorand.png';
-import bcclLogo2026 from '../../assets/images/Sponsors2026/bccl.png';
-import ktmplLogo2026 from '../../assets/images/Sponsors2026/ktmpl.webp';
+import bcclLogo2026 from '../../assets/images/Sponsors2026/Bccl.png';
+import ktmplLogo2026 from '../../assets/images/Sponsors2026/Ktmpl.webp';
 
 
 import ProgressiveImage from "../ProgressiveImage";
@@ -45,8 +45,8 @@ import credilaLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/c
 import insightsLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/iNsightsMini.png';
 import mastraLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/mastra_LogoMini.png';
 import algorandLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/algorandMini.png';
-import bcclLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/bcclMini.png';
-import ktmplLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/ktmplMini.webp';
+import bcclLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/BcclMini.png';
+import ktmplLogo2026Mini from '../../assets/images/Sponsors2026/SponsorsMini/KtmplMini.webp';
 
 const Sponsors = () => {
     const [bgSize, setBgSize] = useState("110%");
